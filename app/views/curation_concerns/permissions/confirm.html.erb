@@ -3,7 +3,7 @@
     <h4>Apply changes to contents?<h4>
   </div>
   <div class="panel-body">
-      <%=  I18n.t("sufia.upload.change_permissions_message_html") %>
+    <%= render_partial I18n.t("sufia.upload.change_permissions_message_html").html_safe %>
   </div>
   <div class="form-actions panel-footer">
     <%= button_to "Yes please.", Sufia::Engine.routes.url_helpers.copy_curation_concerns_permission_path([sufia,curation_concern]), class: 'btn btn-primary' %>
